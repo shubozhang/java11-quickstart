@@ -1,5 +1,29 @@
 # java11-quickstart
 
+### Java 9 New Features
+* New Features
+    * Module System
+    * jShell
+* Syntax Changes
+    * private method for interface
+    * <> operator
+    * try
+
+* API Changes
+    * String: store data in byte array not char array.
+    * of()
+    * Stream API
+    * Deprecated APIs:
+    
+    
+### New Features
+
+* Launching single-file program without compilation: only run the first class 
+that has main method. It can only uses the classes that are defined inside the file.
+
+* ZGC, A scalable low-latency garbage collector (Experimental)
+
+
 ## Appendix
 ### JDK 9 JEPs
 * 102: Process API Updates

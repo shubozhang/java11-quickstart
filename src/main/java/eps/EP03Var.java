@@ -2,6 +2,9 @@ package main.java.eps;
 
 import java.util.function.Consumer;
 
+/*
+* The benefit of using var is add annotation to lambda expression
+* */
 public class EP03Var {
 
     public static void main(String[] args) {
