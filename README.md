@@ -5,8 +5,8 @@
     * Module System
     * jShell
 * Syntax Changes
-    * private method for interface
-    * <> operator
+    * private method in interface
+    * <> can be used with anonymous inner class
     * try
 
 * API Changes

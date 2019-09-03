@@ -1,4 +1,4 @@
-package main.java.eps;
+package main.java.eps11;
 
 import org.junit.Test;
 
