@@ -1,5 +1,7 @@
 package main.java.eps;
 
+import org.junit.Test;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -13,13 +15,8 @@ import java.util.concurrent.ExecutionException;
  * */
 public class EP04Http {
 
-    public static void main(String[] args){
-        testHttpSync();
-
-        testHttpAsync();
-    }
-
-    private static void testHttpSync(){
+    @Test
+    public void testHttpSync(){
         HttpClient httpClient = HttpClient.newHttpClient();
         HttpRequest httpRequest = HttpRequest.newBuilder(URI.create("http://127.0.0.1:8080/test/")).build();
         HttpResponse.BodyHandler<String> bodyHandler = HttpResponse.BodyHandlers.ofString();
@@ -35,7 +32,8 @@ public class EP04Http {
         System.out.println(body);
     }
 
-    private static void testHttpAsync() {
+    @Test
+    public void testHttpAsync() {
         HttpClient httpClient = HttpClient.newHttpClient();
         HttpRequest httpRequest = HttpRequest.newBuilder(URI.create("http://127.0.0.1:8080/test/")).build();
         HttpResponse.BodyHandler<String> bodyHandler = HttpResponse.BodyHandlers.ofString();

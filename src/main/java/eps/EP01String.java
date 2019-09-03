@@ -1,5 +1,7 @@
 package main.java.eps;
 
+import org.junit.Test;
+
 /*
  * 1. isBlank(); // true
  * 2. .strip(); // remove empty space from start and end
@@ -10,26 +12,19 @@ package main.java.eps;
  * */
 public class EP01String {
 
-    public static void main(String[] args) {
-        testIsBlank();
-
-        testStrip();
-
-        testRepeat();
-
-        testLineCount();
-    }
-
-    public static void testLineCount() {
+    @Test
+    public  void testLineCount() {
         System.out.println("abcdef gh".lines().count());
         System.out.println("abc\ndef\n gh\n".lines().count());
     }
 
-    public static void testRepeat() {
+    @Test
+    public  void testRepeat() {
         System.out.println("java".repeat(5));
     }
 
-    public static void testStrip() {
+    @Test
+    public  void testStrip() {
         System.out.println("abc".strip());
         System.out.println("abc   ".strip());
         System.out.println("     abc".strip());
@@ -39,7 +34,8 @@ public class EP01String {
         System.out.println("  abc    ".stripLeading());
     }
 
-    public static void testIsBlank() {
+    @Test
+    public  void testIsBlank() {
         System.out.println("".isBlank());
         System.out.println(" ".isBlank());
         System.out.println(" abc".isBlank());

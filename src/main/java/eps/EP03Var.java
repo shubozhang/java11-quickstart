@@ -1,5 +1,7 @@
 package main.java.eps;
 
+import org.junit.Test;
+
 import java.util.function.Consumer;
 
 /*
@@ -7,7 +9,8 @@ import java.util.function.Consumer;
 * */
 public class EP03Var {
 
-    public static void main(String[] args) {
+    @Test
+    public void testVar() {
         Consumer<String> con1 = (t) -> System.out.println(t.toUpperCase());
         Consumer<String> con2 = (@Deprecated String t) -> System.out.println(t.toUpperCase());
 

@@ -1,6 +1,8 @@
 package main.java.eps;
 
 
+import org.junit.Test;
+
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -16,20 +18,10 @@ import java.util.stream.Collectors;
  * 8. JDK 8: boolean isPresent()
  * */
 public class EP02Optinal {
-    public static void main(String[] args) {
 
-        testOr();
 
-        testIsEmpty();
-
-        testOrElseThrow();
-
-        testIfPresentOrElse();
-
-        testStream();
-    }
-
-    private static void testOr() {
+    @Test
+    public   void testOr() {
         var op1 = Optional.empty();
         var op2 = Optional.of("123");
         var op3 = Optional.of("abc");
@@ -42,7 +34,8 @@ public class EP02Optinal {
 
     }
 
-    private static void testIfPresentOrElse() {
+    @Test
+    public   void testIfPresentOrElse() {
         var op1 = Optional.empty();
         var op2 = Optional.of("abc");
 
@@ -61,13 +54,15 @@ public class EP02Optinal {
 
     }
 
-    private static void testIsEmpty() {
+    @Test
+    public   void testIsEmpty() {
         Optional<Object> op = Optional.empty();
         System.out.println(op.isPresent());
         System.out.println(op.isEmpty());
     }
 
-    private static void testOrElseThrow() {
+    @Test
+    public   void testOrElseThrow() {
         var op = Optional.empty();
 
         try {
@@ -81,7 +76,8 @@ public class EP02Optinal {
         System.out.println(obj2);
     }
 
-    private static void testStream() {
+    @Test
+    public   void testStream() {
         // given
         var value1 = Optional.of("a");
 
