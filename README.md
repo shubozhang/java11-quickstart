@@ -10,7 +10,7 @@
     * try
 
 * API Changes
-    * String: store data in byte array not char array.
+    * String: store data in byte array not char array. Same as StringBuilder and StringBuffer.
     * of()
     * Stream API
     * Deprecated APIs:

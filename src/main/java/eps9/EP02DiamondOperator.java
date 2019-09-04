@@ -1,4 +1,4 @@
-package main.java.eps9;
+package eps9;
 
 import java.util.ArrayList;
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package main.java.eps9;
+package eps9;
 
 public interface EP01Interface {
 

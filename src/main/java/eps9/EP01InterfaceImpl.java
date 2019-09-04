@@ -1,4 +1,4 @@
-package main.java.eps9;
+package eps9;
 
 public class EP01InterfaceImpl implements EP01Interface {
     @Override
