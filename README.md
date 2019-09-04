@@ -7,18 +7,19 @@
 * Syntax Changes
     * private method in interface
     * <> can be used with anonymous inner class
-    * try
+    * enhanced try with resources
 
 * API Changes
     * String: store data in byte array not char array. Same as StringBuilder and StringBuffer.
-    * of()
+    * collection of() method: create a read only collection.
     * Stream API
     * Deprecated APIs:
     
 ### Java 10 New Features
 * Local-Variable Type Inference
+* Collection copyof() method: create a read only collection.
 
-### New Features
+### Java 11 New Features
 * Launching single-file program without compilation: only run the first class 
 that has main method. It can only uses the classes that are defined inside the file.
 
