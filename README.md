@@ -15,9 +15,10 @@
     * Stream API
     * Deprecated APIs:
     
-    
-### New Features
+### Java 10 New Features
+* Local-Variable Type Inference
 
+### New Features
 * Launching single-file program without compilation: only run the first class 
 that has main method. It can only uses the classes that are defined inside the file.
 
@@ -118,7 +119,7 @@ that has main method. It can only uses the classes that are defined inside the f
 * 298: Remove Demos and Samples
 * 299: Reorganize Documentation
 
-### JDK 10 JEPs
+### JDK 10 JEPs (12)
 * 286: Local-Variable Type Inference
 * 296: Consolidate the JDK Forest into a Single Repository
 * 304: Garbage-Collector Interface
@@ -133,7 +134,7 @@ that has main method. It can only uses the classes that are defined inside the f
 * 322: Time-Based Release Versioning
 
 
-### JDK 11 JEPs (LTS) (17 JEPs)
+### JDK 11 JEPs (LTS) (17)
 * 181: Nest-Based Access Control
 * 309: Dynamic Class-File Constants
 * 315: Improve Aarch64 Intrinsics
